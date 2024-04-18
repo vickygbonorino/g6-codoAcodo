@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#botonera {
+    background-color: aqua; /*borrar*/
+    /*usar grid*/
+    display: grid;
+}
