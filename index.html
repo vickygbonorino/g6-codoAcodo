@@ -5,11 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenHeart</title>
     <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="./css/header.css" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        Aca va el navBar
-    </header>
+    <header class="header">
+        <div class="title">
+          <h1>GreenHeart</h1>
+        </div>
+  
+        <div class="navBar">
+          <nav class="mainNav">
+            <ul class="menu">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Servicios</a></li>
+              <li>
+                <a href="#">Productos</a>
+                <ul class="submenu">
+                  <li><a href="#">Higiene</a></li>
+                  <li><a href="#">Productos para el hogar</a></li>
+                  <li><a href="#">Alimentación</a></li>
+                  <li><a href="#">Ropa</a></li>
+                  <li><a href="#">Maquillaje</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Más vendidos</a></li>
+              <li><a href="#">Sobre nosotros</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </nav>
+  
+          <div class="burgerBtn" id="burgerBtn">
+            <div class="icon nav-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
 
     <div>
         <section>
@@ -35,5 +74,7 @@
     <footer>
         Footer
     </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
