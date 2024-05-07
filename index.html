@@ -15,11 +15,9 @@
         <section>
             Banner
         </section>
+
         <section>
-            Envios, Ofertas etc
-        </section>
-        <section>
-            <section id="products">
+            <section class="products">
                 <h2>Nuestros Productos</h2>
                     <section class="productos-container">
                         <div class="producto">Higiene</div>
@@ -28,26 +26,19 @@
                         <div class="producto">Maquillaje</div>
                     </section>
             </section>
-            <h2>Productos mas vendidos</h2>
-                <section class="carousel">
-                    <div class="carousel-inner">
-                    <div class="product">Producto 1</div>
-                    <div class="product">Producto 2</div>
-                    <div class="product">Producto 3</div>
-                    <div class="product">Producto 4</div>
+            <section class="products">
+                <h2>Productos mas vendidos</h2>
+                    <div class="carousel">
+                        <div class="carousel-images">
+                            <img src="src\img\cepillo.jpg" alt="Image 1">
+                            <img src="src\img\jabon.webp" alt="Image 2">
+                            <img src="src\img\shampoo.jpg" alt="Image 3">
+                        </div>
+                        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                        <button class="next" onclick="moveSlide(1)">&#10095;</button>
                     </div>
-                    <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
-                    <button class="next" onclick="moveCarousel(1)">&#10095;</button>
-                </section>    
-        </section>
-        <section>
-            Categorias
-        </section>
-        <section>
-            Sobre Nosotros
-        </section>
-        <section>
-            From contacto
+          </section>
+            <script src="script.js"></script>
         </section>
     </div>
 
