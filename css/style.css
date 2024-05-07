@@ -1,10 +1,16 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
 }
 
 
 
 
 /* Diseño resposivo */
-
+@media  screen and (min-width: 375px) {
+    #cuerpo{
+        padding: 0;
+    }
+}

@@ -9,8 +9,14 @@
 }
 
 
-@media  screen and (min-width: 375px) {
-    #banner button{
-        top:50vh; 
+@media  screen and (min-width: 768px) {
+    #banner{
+        background-image: url('/src/img/Banner\ Web\ GreenHeart.png') ;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+    #banner img{
+        visibility: hidden;
+        
     }
 }
