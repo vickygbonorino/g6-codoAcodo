@@ -4,32 +4,7 @@
 }
 
 
-#banner{
-    position: static;
-}
 
-#banner img {
-    position: static;
-    width: 100%;
-    height: auto;
-}
-
-#banner button{
-    position: absolute;
-    top:40vh; 
-    left: 7%;
-    z-index: 1;
-    background-color: #fbfbfb;
-    width: 30vw;
-    font-size: .5rem;
-    padding: 2vw;
-    border-radius: 30px;
-}
 
 /* Diseño resposivo */
 
-@media  screen and (min-width: 375px) {
-    #banner button{
-        top:50vh; 
-    }
-}
