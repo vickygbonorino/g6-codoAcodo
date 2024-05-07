@@ -90,6 +90,7 @@
     display: block;
     background-color: #86664f;
     margin-right: 30px;
+    z-index: 100;
   }
   .mainNav {
     position: relative;
