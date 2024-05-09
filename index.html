@@ -7,38 +7,73 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header>
-        Aca va el navBar
+    <header class="header">
+        <div class="title">
+          <h1>GreenHeart</h1>
+          <img src="./src/img/logo.png" alt="" srcset="" >
+        </div>
+  
+        <div class="navBar">
+          <nav class="mainNav">
+            <ul class="menu">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Servicios</a></li>
+              <li>
+                <a href="#">Productos</a>
+                <ul class="submenu">
+                  <li><a href="#">Higiene</a></li>
+                  <li><a href="#">Productos para el hogar</a></li>
+                  <li><a href="#">Alimentación</a></li>
+                  <li><a href="#">Ropa</a></li>
+                  <li><a href="#">Maquillaje</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Más vendidos</a></li>
+              <li><a href="#">Sobre nosotros</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </nav>
+  
+          <div class="burgerBtn" id="burgerBtn">
+            <div class="icon nav-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+        </div>
+
     </header>
 
-    <div>
-        <section>
-            Banner
+    <div id="cuerpo">
+        <section id="banner">
+            <img src="/src/img/Banner Mobile GreenHeart (1).png" alt="Banner con una imagen de los productos">
         </section>
-        <section>
-            Envios, Ofertas etc
+
+        <section id="servicios">
+            <div class="servicio">
+                <span class="material-symbols-outlined">local_shipping</span>
+                <p class="nombreServicio">Envío gratis</p>
+                <p class="descripcionServicio">En todos los productos</p>
+            </div>
+            <div class="servicio">
+                <span class="material-symbols-outlined">card_membership</span>
+                <p class="nombreServicio">Certificado Eco</p>
+                <p class="descripcionServicio">Garantía 100%</p>
+            </div>
+            <div class="servicio">
+                <span class="material-symbols-outlined">loyalty</span>
+                <p class="nombreServicio">Grandes ahorros</p>
+                <p class="descripcionServicio">Al precio más bajo</p>
+            </div>
+            <div class="servicio">
+                <span class="material-symbols-outlined">cycle</span>
+                <p class="nombreServicio">Refill</p>
+                <p class="descripcionServicio">Artículos retornables</p>
+            </div>
         </section>
+
         <section>
-            <section id="products">
-                <h2>Nuestros Productos</h2>
-                    <section class="productos-container">
-                        <div class="producto">Higiene</div>
-                        <div class="producto">Alimentación</div>
-                        <div class="producto">Ropa</div>
-                        <div class="producto">Maquillaje</div>
-                    </section>
-            </section>
-            <h2>Productos mas vendidos</h2>
-                <section class="carousel">
-                    <div class="carousel-inner">
-                    <div class="product">Producto 1</div>
-                    <div class="product">Producto 2</div>
-                    <div class="product">Producto 3</div>
-                    <div class="product">Producto 4</div>
-                    </div>
-                    <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
-                    <button class="next" onclick="moveCarousel(1)">&#10095;</button>
-                </section>    
+            Productos mas vendidos
         </section>
         <section>
             Categorias
@@ -54,5 +89,7 @@
     <footer>
         Footer
     </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
