@@ -1,17 +1,19 @@
-
+/* --------------------mobile version-------------------- */
 .header {
   height: auto;
   background: #d0ddc1;
-  position: relative;
+  position:fixed;
   top: 0;
   right: 0;
   left: 0;
   width: 100%;
 }
+
 .title{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 1.8em 0 1.8em;
 }
 .title img{
   width: 50px;
@@ -27,7 +29,9 @@
   user-select: none;
 }
 
+
 .mainNav ul {
+  
   list-style: none;
 
   margin: 0;
@@ -39,7 +43,11 @@
 
 .mainNav.open ul {
   max-height: 500px;
+ 
+
+
 }
+
 
 .mainNav ul a {
   box-sizing: border-box;
@@ -52,22 +60,34 @@
   color: #86664f;
 }
 
-.mainNav ul li:hover {
+
+.mainNav ul li a:hover {
   background-color: #fbfbfb;
+  transition: background-color 300ms ease;
+  border-radius: 20px;
+  
 }
 
 .mainNav .submenu {
   display: none;
   position: relative;
-  background: #d0ddc3;
   max-height: 0;
+  background: #D7E5C7;
   overflow: hidden;
+
+  
 }
 
 .mainNav li:hover .submenu {
   display: block;
-  height: 200px;
+  max-height: 300px;
+
+  
+ 
 }
+
+
+/* --------------------responsive version escritorio-------------------- */
 
 @media (min-width: 768px) {
   .burgerBtn {
@@ -78,13 +98,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0.8em;
+    height: 3.5em;
+    
   }
+
 
   .navBar {
     display: block;
     background-color: #86664f;
-    margin-right: 30px;
+    margin-right: 1em;
   }
   .mainNav {
     position: relative;
@@ -99,10 +121,10 @@
     padding: 0.75em 0.8em;
   }
 
-  /* .mainNav .submenu {
-      display: none;
-      overflow: hidden; 
-  }*/
+  .mainNav .submenu {
+    border-radius: 30px; 
+  }
+
 
   .mainNav .submenu a {
     padding: 0.5em 0.9em;
@@ -110,7 +132,8 @@
 
   .mainNav .submenu li {
     display: block;
-    background-color: #d0ddc1;
+    background-color: #D7E5C7;
+    border-radius: 30px;
   }
 
   .mainNav li:hover .submenu {
@@ -119,8 +142,11 @@
     position: absolute;
     top: 1.75em;
     left: 7.5em;
+
   }
 }
+
+/* --------------------burger-btn-------------------- */
 
 .burgerBtn {
   position: absolute;
@@ -206,3 +232,4 @@
   transform: rotate(-45deg);
   transition-delay: 150ms;
 }
+
