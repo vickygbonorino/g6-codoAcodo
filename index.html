@@ -1,104 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenHeart</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/banner.css" />
-    <link rel="stylesheet" href="./css/servicios.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenHeart</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/banner.css" />
+  <link rel="stylesheet" href="./css/servicios.css" />
+  <link rel="stylesheet" href="./css/sobreNosotros.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
-    <!-- Iconos -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+  <!-- Iconos -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
+
 <body>
-    <header class="header">
-        <div class="title">
-          <h1>GreenHeart</h1>
-          <img src="./src/img/logo.png" alt="" srcset="" >
-        </div>
-  
-        <div class="navBar">
-          <nav class="mainNav">
-            <ul class="menu">
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Servicios</a></li>
-              <li>
-                <a href="#">Productos</a>
-                <ul class="submenu">
-                  <li><a href="#">Higiene</a></li>
-                  <li><a href="#">Productos para el hogar</a></li>
-                  <li><a href="#">Alimentación</a></li>
-                  <li><a href="#">Ropa</a></li>
-                  <li><a href="#">Maquillaje</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Más vendidos</a></li>
-              <li><a href="#">Sobre nosotros</a></li>
-              <li><a href="#">Contacto</a></li>
-            </ul>
-          </nav>
-  
-          <div class="burgerBtn" id="burgerBtn">
-            <div class="icon nav-icon">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-        </div>
-
-    </header>
-
-    <div id="cuerpo">
-        <section id="banner">
-            <img src="/src/img/Banner Mobile GreenHeart (1).png" alt="Banner con una imagen de los productos">
-        </section>
-
-        <section id="servicios">
-            <div class="servicio">
-                <span class="material-symbols-outlined">local_shipping</span>
-                <p class="nombreServicio">Envío gratis</p>
-                <p class="descripcionServicio">En todos los productos</p>
-            </div>
-            <div class="servicio">
-                <span class="material-symbols-outlined">card_membership</span>
-                <p class="nombreServicio">Certificado Eco</p>
-                <p class="descripcionServicio">Garantía 100%</p>
-            </div>
-            <div class="servicio">
-                <span class="material-symbols-outlined">loyalty</span>
-                <p class="nombreServicio">Grandes ahorros</p>
-                <p class="descripcionServicio">Al precio más bajo</p>
-            </div>
-            <div class="servicio">
-                <span class="material-symbols-outlined">cycle</span>
-                <p class="nombreServicio">Refill</p>
-                <p class="descripcionServicio">Artículos retornables</p>
-            </div>
-        </section>
-
-        <section>
-            Productos mas vendidos
-        </section>
-        <section>
-            Categorias
-        </section>
-        <section>
-            Sobre Nosotros
-        </section>
-        <section>
-            From contacto
-        </section>
+  <header class="header">
+    <div class="header-title">
+      <h1>GreenHeart</h1>
+      <img src="./src/img/logo.png" alt="" srcset="">
     </div>
 
-    <footer>
-        Footer
-    </footer>
+    <div class="container-mainNav">
+      <nav class="mainNav">
+        <ul class="mainNav-menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li>
+            <a href="#">Productos</a>
+            <ul class="mainNav-submenu">
+              <li><a href="#">Higiene</a></li>
+              <li><a href="#">Productos para el hogar</a></li>
+              <li><a href="#">Alimentación</a></li>
+              <li><a href="#">Ropa</a></li>
+              <li><a href="#">Maquillaje</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Más vendidos</a></li>
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
 
-    <script src="./js/script.js"></script>
+      <div class="menu-toggle" id="menu-toggle">
+        <div class="icon nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+  </header>
+
+  <div id="cuerpo">
+    <section id="banner">
+      <img src="/src/img/Banner Mobile GreenHeart (1).png" alt="Banner con una imagen de los productos">
+    </section>
+
+    <section id="servicios">
+      <div class="servicio">
+        <span class="material-symbols-outlined">local_shipping</span>
+        <p class="nombreServicio">Envío gratis</p>
+        <p class="descripcionServicio">En todos los productos</p>
+      </div>
+      <div class="servicio">
+        <span class="material-symbols-outlined">card_membership</span>
+        <p class="nombreServicio">Certificado Eco</p>
+        <p class="descripcionServicio">Garantía 100%</p>
+      </div>
+      <div class="servicio">
+        <span class="material-symbols-outlined">loyalty</span>
+        <p class="nombreServicio">Grandes ahorros</p>
+        <p class="descripcionServicio">Al precio más bajo</p>
+      </div>
+      <div class="servicio">
+        <span class="material-symbols-outlined">cycle</span>
+        <p class="nombreServicio">Refill</p>
+        <p class="descripcionServicio">Artículos retornables</p>
+      </div>
+    </section>
+
+    <section>
+      Productos mas vendidos
+    </section>
+    <section>
+      Categorias
+    </section>
+    <section id="sobreNosotros">
+      <div class="sobreNosotros-title">
+
+        <h2>SOBRE NOSOTROS</h2>
+      </div>
+      <div class="sobreNosotros-text">
+
+        <p><span>GreenHeart</span> es la nueva tienda ecológica online para personas con personalidad. Nuestros
+          productos innovadores respetan el medio ambiente y son ideales para aquellos que buscan un estilo de vida
+          saludable y sostenible. ¡Bienvenido a nuestra tienda eco-friendly en Argentina y en todo el mundo!</p>
+        <p>Además de nuestros productos, en nuestras redes sociales podrás encontrar consejos para reducir tu impacto
+          ambiental. ¿Qué mejor manera de cuidar el planeta que con productos eco-friendly? ¡Descúbrelos aquí!</p>
+
+      </div>
+
+
+    </section>
+    <section>
+      From contacto
+    </section>
+  </div>
+
+  <footer>
+    Footer
+  </footer>
+
+  <script src="./js/script.js"></script>
 </body>
+
 </html>

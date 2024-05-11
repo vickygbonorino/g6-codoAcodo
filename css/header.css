@@ -2,36 +2,36 @@
 .header {
   height: auto;
   background: #d0ddc1;
-  position:fixed;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
   width: 100%;
+  z-index: 1000;
 }
 
-.title{
+.header-title {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 1.8em 0 1.8em;
 }
-.title img{
+
+.header-title img {
   width: 50px;
   height: 50px;
 }
-.title h1 {
+
+.header-title h1 {
+  user-select: none;
   font-size: 1.8em;
   color: #86664f;
-  position: relative;
 
+  position: relative;
   margin: 10px 0;
-  align-self: center;
-  user-select: none;
 }
 
-
 .mainNav ul {
-  
   list-style: none;
 
   margin: 0;
@@ -43,11 +43,7 @@
 
 .mainNav.open ul {
   max-height: 500px;
- 
-
-
 }
-
 
 .mainNav ul a {
   box-sizing: border-box;
@@ -59,51 +55,36 @@
   padding: 0.4em 1em;
   color: #86664f;
 }
-
-
 .mainNav ul li a:hover {
   background-color: #fbfbfb;
   transition: background-color 300ms ease;
   border-radius: 20px;
-  
 }
-
-.mainNav .submenu {
+.mainNav .mainNav-submenu {
   display: none;
   position: relative;
   max-height: 0;
   background: #D7E5C7;
   overflow: hidden;
-
-  
 }
-
-.mainNav li:hover .submenu {
+.mainNav li:hover .mainNav-submenu {
   display: block;
   max-height: 300px;
-
-  
- 
 }
-
 
 /* --------------------responsive version escritorio-------------------- */
 
 @media (min-width: 768px) {
-  .burgerBtn {
+  .menu-toggle {
     display: none;
   }
-
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 3.5em;
-    
   }
-
-
-  .navBar {
+  .container-mainNav {
     display: block;
     background-color: #86664f;
     margin-right: 1em;
@@ -111,7 +92,6 @@
   .mainNav {
     position: relative;
   }
-
   .mainNav ul {
     display: flex;
     align-items: center;
@@ -120,40 +100,32 @@
   .mainNav ul li a {
     padding: 0.75em 0.8em;
   }
-
-  .mainNav .submenu {
-    border-radius: 30px; 
+  .mainNav .mainNav-submenu {
+    border-radius: 30px;
   }
-
-
-  .mainNav .submenu a {
+  .mainNav .mainNav-submenu a {
     padding: 0.5em 0.9em;
   }
-
-  .mainNav .submenu li {
+  .mainNav .mainNav-submenu li {
     display: block;
     background-color: #D7E5C7;
     border-radius: 30px;
   }
-
-  .mainNav li:hover .submenu {
+  .mainNav li:hover .mainNav-submenu {
     overflow: visible;
     display: block;
     position: absolute;
     top: 1.75em;
     left: 7.5em;
-
   }
 }
 
 /* --------------------burger-btn-------------------- */
-
-.burgerBtn {
+.menu-toggle {
   position: absolute;
   top: 0.3em;
   right: 0.5em;
 }
-
 .nav-icon {
   width: 35px;
   height: 30px;
@@ -232,4 +204,3 @@
   transform: rotate(-45deg);
   transition-delay: 150ms;
 }
-

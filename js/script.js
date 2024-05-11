@@ -1,9 +1,9 @@
-const burgerBtn = document.querySelector('.burgerBtn');
+const menuToggle = document.querySelector('.menu-toggle');
 const mainNav = document.querySelector('.mainNav');
 const navIcon = document.querySelector('.nav-icon');
 
 document.addEventListener('DOMContentLoaded', () => {
-  burgerBtn.addEventListener('click', () => {
+  menuToggle.addEventListener('click', () => {
       mainNav.classList.toggle('open');
       navIcon.classList.toggle('open'); 
   });
