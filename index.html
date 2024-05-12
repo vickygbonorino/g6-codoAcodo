@@ -10,26 +10,28 @@
   <link rel="stylesheet" href="./css/banner.css" />
   <link rel="stylesheet" href="./css/servicios.css" />
   <link rel="stylesheet" href="./css/sobreNosotros.css">
+  <link rel="stylesheet" href="./css/footer.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
   <!-- Iconos -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
   <header class="header">
     <div class="header-title">
       <h1>GreenHeart</h1>
-      <img src="./src/img/logo.png" alt="" srcset="">
+      <img src="./src/img/logo.png" alt="Logo de GreenHeart">
     </div>
 
     <div class="container-mainNav">
       <nav class="mainNav">
         <ul class="mainNav-menu">
           <li><a href="#">Inicio</a></li>
-          <li><a href="#">Servicios</a></li>
+          <li><a href="#servicios">Servicios</a></li>
           <li>
             <a href="#">Productos</a>
             <ul class="mainNav-submenu">
@@ -41,7 +43,7 @@
             </ul>
           </li>
           <li><a href="#">Más vendidos</a></li>
-          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#sobreNosotros">Sobre nosotros</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
       </nav>
@@ -112,10 +114,25 @@
     </section>
   </div>
 
-  <footer>
-    Footer
+  <footer class="footer" id="footer">
+    <img class="footer-logo" src="./src/img/logo.png" alt="Logo de GreenHeart">
+    <div class="footer-container">
+      <div class="footer-social">
+        <p>Contáctenos</p>
+        <div class="social-icon">
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+        <div class="social-icon">
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <p class="copyright-text">Copyright&copy 2024 | GreenHeart</p>
+    </div>
   </footer>
-
   <script src="./js/script.js"></script>
 </body>
 

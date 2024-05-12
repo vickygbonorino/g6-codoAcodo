@@ -48,7 +48,6 @@
 .mainNav ul a {
   box-sizing: border-box;
   font-size: 20px;
-  text-decoration: none;
   display: block;
   text-align: center;
   width: 100%;
@@ -58,7 +57,7 @@
 .mainNav ul li a:hover {
   background-color: #fbfbfb;
   transition: background-color 300ms ease;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .mainNav .mainNav-submenu {
   display: none;
@@ -99,9 +98,10 @@
   }
   .mainNav ul li a {
     padding: 0.75em 0.8em;
+
   }
   .mainNav .mainNav-submenu {
-    border-radius: 30px;
+    border-radius: 10px;
   }
   .mainNav .mainNav-submenu a {
     padding: 0.5em 0.9em;
@@ -109,7 +109,7 @@
   .mainNav .mainNav-submenu li {
     display: block;
     background-color: #D7E5C7;
-    border-radius: 30px;
+    border-radius: 10px;
   }
   .mainNav li:hover .mainNav-submenu {
     overflow: visible;
