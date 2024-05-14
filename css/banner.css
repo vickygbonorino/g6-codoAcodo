@@ -1,0 +1,31 @@
+#banner{
+    position: static;
+    margin: 0;
+}
+
+#banner img {
+    width: 100%;
+    /* height: auto; Cambiado por max-height: 100vh porque agregaba espacio debajo del footer */
+    max-height: 100vh;
+    
+}
+
+/* Tablet */
+@media  screen and (min-width: 768px) {
+    #banner{
+        background-image: url('/src/img/Banner\ Web\ GreenHeart.png') ;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        height: 320px;
+    }
+    #banner img{
+        visibility: hidden;
+    }
+}
+
+/* Desktop */
+@media  screen and (min-width: 1024px) {
+    #banner{
+        height: 430px;
+    }
+}

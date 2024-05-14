@@ -1,19 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenHeart</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    <header>
-        Aca va el navBar
-    </header>
 
-    <div>
-        <section>
-            Banner
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon">
+  <title>GreenHeart</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/banner.css" />
+  <link rel="stylesheet" href="./css/servicios.css" />
+  <link rel="stylesheet" href="./css/sobreNosotros.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/masVendidos.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+  <!-- Iconos -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-title">
+      <h1>GreenHeart</h1>
+      <img src="./src/img/logo.png" alt="Logo de GreenHeart">
+    </div>
+
+    <div class="container-mainNav">
+      <nav class="mainNav">
+        <ul class="mainNav-menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li>
+            <a href="#">Productos</a>
+            <ul class="mainNav-submenu">
+              <li><a href="#">Higiene</a></li>
+              <li><a href="#">Productos para el hogar</a></li>
+              <li><a href="#">Alimentación</a></li>
+              <li><a href="#">Ropa</a></li>
+              <li><a href="#">Maquillaje</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Más vendidos</a></li>
+          <li><a href="#sobreNosotros">Sobre nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu-toggle" id="menu-toggle">
+        <div class="icon nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+  </header>
+
+  <div id="cuerpo">
+    <section id="banner">
+      <img src="/src/img/Banner Mobile GreenHeart (1).png" alt="Banner con una imagen de los productos">
+    </section>
+
+    <section id="servicios">
+      <div class="servicio">
+        <span class="material-symbols-outlined">local_shipping</span>
+        <p class="nombreServicio">Envío gratis</p>
+        <p class="descripcionServicio">En todos los productos</p>
+      </div>
+      <div class="servicio">
+        <span class="material-symbols-outlined">card_membership</span>
+        <p class="nombreServicio">Certificado Eco</p>
+        <p class="descripcionServicio">Garantía 100%</p>
+      </div>
+      <div class="servicio">
+        <span class="material-symbols-outlined">loyalty</span>
+        <p class="nombreServicio">Grandes ahorros</p>
+        <p class="descripcionServicio">Al precio más bajo</p>
+      </div>
+      <div class="servicio">
+        <span class="material-symbols-outlined">cycle</span>
+        <p class="nombreServicio">Refill</p>
+        <p class="descripcionServicio">Artículos retornables</p>
+      </div>
+    </section>
+
+    <section>
+      <!-- <section class="products">
+        <h2>Nuestros Productos</h2>
+        <section class="productos-container">
+          <div class="producto">Higiene</div>
+          <div class="producto">Alimentación</div>
+          <div class="producto">Ropa</div>
+          <div class="producto">Maquillaje</div>
         </section>
         <section>
             Envios, Ofertas etc
@@ -27,35 +109,31 @@
         <section>
             Sobre Nosotros
         </section>
-        <section id="contact">
-            <h2>Contacto</h2>
-            <form id="contact-form">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <label for="subject">Asunto:</label>
-                <select id="subject" name="subject">
-                    <option value="consulta">Consulta</option>
-                    <option value="reclamo">Reclamo</option>
-                    <option value="sugerencia">Sugerencia</option>
-                </select>
-                
-                <input type="checkbox" id="agree" name="agree" required>
-                <label for="agree">Acepto los términos y condiciones</label>
-                
-                <button type="submit">Enviar</button>
-            </form>
+        <section>
+            From contacto
         </section>
     </div>
 
-    <footer>
-        Footer
-    </footer>
+  <footer class="footer" id="footer">
+    <img class="footer-logo" src="./src/img/logo.png" alt="Logo de GreenHeart">
+    <div class="footer-container">
+      <div class="footer-social">
+        <p>Contáctenos</p>
+        <div class="social-icon">
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+        <div class="social-icon">
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <p class="copyright-text">Copyright&copy 2024 | GreenHeart</p>
+    </div>
+  </footer>
+  <script src="./js/script.js"></script>
 </body>
+
 </html>
