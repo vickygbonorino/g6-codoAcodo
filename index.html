@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./css/sobreNosotros.css">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/masVendidos.css">
+  <link rel="stylesheet" href="./css/categoriasDeProductos.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -87,41 +88,54 @@
       </div>
     </section>
 
-    <section>
-      <!-- <section class="products">
-        <h2>Nuestros Productos</h2>
-        <section class="productos-container">
-          <div class="producto">Higiene</div>
-          <div class="producto">Alimentación</div>
-          <div class="producto">Ropa</div>
-          <div class="producto">Maquillaje</div>
-        </section>
-      </section> -->
-      <section class="products">
-        <h2>Productos más vendidos</h2>
-        <div class="carousel">
-          <div class="carousel-images">
-            <img src="src\img\cepillo.jpg" alt="Image 1">
-            <img src="src\img\jabon.webp" alt="Image 2">
-            <img src="src\img\shampoo.jpg" alt="Image 3">
-          </div>
-          <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-          <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    <section class="products">
+      <h2>Productos más vendidos</h2>
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="src\img\cepillo.jpg" alt="Image 1">
+          <img src="src\img\jabon.webp" alt="Image 2">
+          <img src="src\img\shampoo.jpg" alt="Image 3">
         </div>
-      </section>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
     </section>
 
-    <section>
-      Categorias
+    <section id="categoriasDeProductos">
+        <h2>Nuestros Productos</h2>
+        <section class="categorias-container">
+          <div class="categoria">
+            <span class="material-symbols-outlined">self_care</span>
+            <p class="nombreCategoria">Higiene</p>
+          </div>
+          <div class="categoria">
+            <span class="material-symbols-outlined">family_home</span>
+            <p class="nombreCategoria">Hogar</p>
+          </div>
+          <div class="categoria">
+            <span class="material-symbols-outlined">restaurant</span>
+            <p class="nombreCategoria">Alimentación</p>
+          </div>
+          <div class="categoria">
+            <span class="material-symbols-outlined">apparel</span>
+            <p class="nombreCategoria">Ropa</p>
+          </div>
+          <div class="categoria">
+            <span class="material-symbols-outlined">health_and_beauty</span>
+            <p class="nombreCategoria">Maquillaje</p>
+          </div>
+          <div class="categoria">
+            <span class="material-symbols-outlined">inventory_2</span>
+            <p class="nombreCategoria">Todos los Productos</p>
+          </div>
+        </section>
     </section>
 
     <section id="sobreNosotros">
       <div class="sobreNosotros-title">
-
         <h2>SOBRE NOSOTROS</h2>
       </div>
       <div class="sobreNosotros-text">
-
         <p><span>GreenHeart</span> es la nueva tienda ecológica online para personas con personalidad. Nuestros
           productos innovadores respetan el medio ambiente y son ideales para aquellos que buscan un estilo de vida
           saludable y sostenible. ¡Bienvenido a nuestra tienda eco-friendly en Argentina y en todo el mundo!</p>
@@ -129,8 +143,6 @@
           ambiental. ¿Qué mejor manera de cuidar el planeta que con productos eco-friendly? ¡Descúbrelos aquí!</p>
 
       </div>
-
-
     </section>
     <section>
       From contacto

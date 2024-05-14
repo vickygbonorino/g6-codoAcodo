@@ -69,39 +69,3 @@
         max-height: 500px; 
     }
 }
-
-
-/* .productos-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-} */
-
-
-/* .producto {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-} */
-
-/* .producto img {
-    max-width: 300px;
-    height: 300px;
-    border-radius: 5px;
-} */
-
-/* .producto h2 {
-    margin-top: 10px;
-    font-size: 18px;
-} */
-
-/* .producto p {
-    margin-top: 5px;
-    font-size: 14px;
-    color: #666;
-} */
