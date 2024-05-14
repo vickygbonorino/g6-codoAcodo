@@ -1,30 +1,91 @@
-form {
-    max-width: 400px;
-    margin: 0 auto;
+#contact{
+    padding: 2em;
+    background: #86664f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#contact h2 {
+    font-size: 1.6em;
+    font-weight: 100;
+    color: #fbfbfb;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea,
-select {
+.container-form{
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
 }
 
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+
+
+.container-input label {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-bottom: 5px;
+    color: #fbfbfb;
+}
+.container-input{
+    display: flex;
+    
+    margin: .5em;
+    position: relative;
+}
+
+.container-input input, .container-input textarea{
+    width: 270px;
+    padding: 10px;
+    color: #fbfbfb;
+    background: none;
+    
+    border-radius: 10px;
+    border: #fbfbfb .5px solid;
+    outline: none;
+}
+.container-input textarea{
+    resize: none;
+    height: 100px;
+}
+
+.container-select label{
+    color: #fbfbfb;
+}
+.container-select select{
+    background: #fbfbfb;
+    color: #86664f;
+    border-radius: 10px;
+    padding: 10px;
+
+    /* border: #fbfbfb .5px solid; */
+    outline: none;
+
+}
 button {
+    background-color: #d0ddc1;
+    color: #86664f;
+    font-size: 1.2em;
+    font-weight: 500;
+
+
+    width: 100px;
     padding: 10px 20px;
-    background-color: #333;
-    color: white;
     border: none;
+    border-radius: 10px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #e1e0df;
 }
