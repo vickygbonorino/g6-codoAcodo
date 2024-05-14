@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon">
   <title>GreenHeart</title>
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="./css/header.css" />
@@ -13,6 +14,7 @@
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/masVendidos.css">
   <link rel="stylesheet" href="./css/categoriasDeProductos.css">
+  <link rel="stylesheet" href="./css/forms.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,6 +90,120 @@
       </div>
     </section>
 
+    <section class="products">
+      <h2>Productos más vendidos</h2>
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="src\img\cepillo.jpg" alt="Image 1">
+          <img src="src\img\jabon.webp" alt="Image 2">
+          <img src="src\img\shampoo.jpg" alt="Image 3">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+    </section>
+
+    <section id="categoriasDeProductos">
+      <h2>Nuestros Productos</h2>
+      <div class="categorias-container">
+        <div class="categoria">
+          <span class="material-symbols-outlined">self_care</span>
+          <p class="nombreServicio">Higiene</p>
+        </div>
+        <div class="categoria">
+          <span class="material-symbols-outlined">family_home</span>
+          <p class="nombreServicio">Hogar</p>
+        </div>
+        <div class="categoria">
+          <span class="material-symbols-outlined">restaurant</span>
+          <p class="nombreServicio">Alimentación</p>
+        </div>
+        <div class="categoria">
+          <span class="material-symbols-outlined">apparel</span>
+          <p class="nombreServicio">Ropa</p>
+        </div>
+        <div class="categoria">
+          <span class="material-symbols-outlined">health_and_beauty</span>
+          <p class="nombreServicio">Maquillaje</p>
+        </div>
+        <div class="categoria">
+          <span class="material-symbols-outlined">inventory_2</span>
+          <p class="nombreServicio">Todos los Productos</p>
+        </div>
+      </div>
+    </section>
+    
+        <section id="sobreNosotros">
+          <div class="sobreNosotros-title">
+      
+              <h2>SOBRE NOSOTROS</h2>
+            </div>
+            <div class="sobreNosotros-text">
+      
+              <p><span>GreenHeart</span> es la nueva tienda ecológica online para personas con personalidad. Nuestros
+                productos innovadores respetan el medio ambiente y son ideales para aquellos que buscan un estilo de vida
+                saludable y sostenible. ¡Bienvenido a nuestra tienda eco-friendly en Argentina y en todo el mundo!</p>
+            <p>Además de nuestros productos, en nuestras redes sociales podrás encontrar consejos para reducir tu impacto
+              ambiental. ¿Qué mejor manera de cuidar el planeta que con productos eco-friendly? ¡Descúbrelos aquí!</p>
+    
+          </div>
+    
+    
+        </section>
+      
+
+
+    <section id="contact">
+      <h2>Contacto</h2>
+      <form id="contact-form">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" required></textarea>
+          
+          <label for="subject">Asunto:</label>
+          <select id="subject" name="subject">
+              <option value="consulta">Consulta</option>
+              <option value="reclamo">Reclamo</option>
+              <option value="sugerencia">Sugerencia</option>
+          </select>
+          
+          <input type="checkbox" id="agree" name="agree" required>
+          <label for="agree">Acepto los términos y condiciones</label>
+          
+          <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section>
+      <section class="products">
+        <h2>Nuestros Productos</h2>
+        <section class="productos-container">
+          <div class="producto">Higiene</div>
+          <div class="producto">Alimentación</div>
+          <div class="producto">Ropa</div>
+          <div class="producto">Maquillaje</div>
+        </section>
+        <section>
+            Envios, Ofertas etc
+        </section>
+        <section>
+            Productos mas vendidos
+        </section>
+        <section>
+            Categorias
+        </section>
+        <section>
+            Sobre Nosotros
+        </section>
+        <section>
+            From contacto
+        </section>
+    </div>
     <section class="products">
       <h2>Productos más vendidos</h2>
       <div class="carousel">
