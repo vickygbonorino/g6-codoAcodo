@@ -5,7 +5,8 @@
 
 #banner img {
     width: 100%;
-    /* height: auto; Cambiado por max-height: 100vh porque agregaba espacio debajo del footer */
+    /* height: auto; Cambiado por max-height: 100vh porque agregaba espacio */
+
     max-height: 100vh;
     
 }

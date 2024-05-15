@@ -34,3 +34,4 @@ function moveSlide(n) {
     showSlides();
 }
 
+
