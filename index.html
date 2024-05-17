@@ -93,16 +93,26 @@
     <section class="products">
       <h2>Productos más vendidos</h2>
       <div class="carousel">
-        <div class="carousel-images">
-          <img src="src\img\cepillo.jpg" alt="Image 1">
-          <img src="src\img\jabon.webp" alt="Image 2">
-          <img src="src\img\shampoo.jpg" alt="Image 3">
-        </div>
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+          <div class="carousel-images">
+              <div class="carousel-item">
+                  <img src="src/img/cepillo.jpg" alt="Cepillo">
+                  <p class="product-description">Cepillo: Ideal para mantener tu cabello suave y desenredado.</p>
+                  <a href="#" class="buy-button">Comprar</a>
+              </div>
+              <div class="carousel-item">
+                  <img src="src/img/jabon.webp" alt="Jabón">
+                  <p class="product-description">Jabón: Limpieza profunda con ingredientes naturales.</p>
+                  <a href="#" class="buy-button">Comprar</a>
+              </div>
+              <div class="carousel-item">
+                  <img src="src/img/shampoo.jpg" alt="Shampoo">
+                  <p class="product-description">Shampoo: Fórmula especial para todo tipo de cabello.</p>
+                  <a href="#" class="buy-button">Comprar</a>
+              </div>
+          </div>
+          <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+          <button class="next" onclick="moveSlide(1)">&#10095;</button>
       </div>
-    </section>
-
     <section id="categoriasDeProductos">
       <h2>Nuestros Productos</h2>
       <div class="categorias-container">

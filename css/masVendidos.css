@@ -1,7 +1,7 @@
 .products {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
-    background-color: white;
+    background-color: #93a267;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -48,6 +48,18 @@
 
 .next {
     right: 0;
+}
+
+.product-description, .buy-button {
+    margin-top: 10px;
+}
+.buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #D0DDC1;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 /* Tablet */
