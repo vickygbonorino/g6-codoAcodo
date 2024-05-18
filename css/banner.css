@@ -5,8 +5,7 @@
 
 #banner img {
     width: 100%;
-    /* height: auto; Cambiado por max-height: 100vh porque agregaba espacio debajo del footer */
-    max-height: 100vh;
+    height: auto;
     
 }
 
@@ -16,7 +15,7 @@
         background-image: url('/src/img/Banner\ Web\ GreenHeart.png') ;
         background-repeat: no-repeat;
         background-size: 100% auto;
-        height: 320px;
+        /* height: 320px; */
     }
     #banner img{
         visibility: hidden;

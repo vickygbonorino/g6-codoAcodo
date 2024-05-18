@@ -5,6 +5,8 @@
     justify-content: space-between;
     padding: 20px;
     background-color: #86664F;
+    position: relative;
+    top: -5px;
 }
 
 .servicio{
@@ -75,6 +77,10 @@
 
 /* Tablet */
 @media  screen and (min-width: 768px) {
+
+    #servicios{
+        top: 0;
+    }
     .servicio{
         margin-bottom: 20px;
         box-sizing: border-box;
