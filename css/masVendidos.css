@@ -24,21 +24,23 @@
 
 .carousel-images img {
     max-width: 300px; 
-    max-height: 300px; 
+    height: 300px;
     display: block; 
     margin: auto; 
 }
 
 .prev, .next {
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: rgb(224, 236, 196);
+    background: #86664f;
+    opacity: .6;
+    color: #fbfbfb;
     border: none;
     cursor: pointer;
     padding: 10px 15px;
     font-size: 18px;
+    border-radius: 5px;
     z-index: 1;
 }
 
