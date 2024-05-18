@@ -93,76 +93,93 @@
 
 
     <section class="products">
-            <h2>Productos más vendidos</h2>
-            <div class="carousel">
-              <div class="carousel-images">
-                <img src="src\img\cepillo.jpg" alt="Image 1">
-                <img src="src\img\jabon.webp" alt="Image 2">
-                <img src="src\img\shampoo.jpg" alt="Image 3">
-              </div>
-              <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-              <button class="next" onclick="moveSlide(1)">&#10095;</button>
-            </div>
-          </section>
-        </section>
-    
-        <section>
-          Categorias
-        </section>
-    
-        <section id="sobreNosotros">
-          <div class="sobreNosotros-title">
-      
-              <h2>SOBRE NOSOTROS</h2>
-            </div>
-            <div class="sobreNosotros-text">
-      
-              <p><span>GreenHeart</span> es la nueva tienda ecológica online para personas con personalidad. Nuestros
-                productos innovadores respetan el medio ambiente y son ideales para aquellos que buscan un estilo de vida
-                saludable y sostenible. ¡Bienvenido a nuestra tienda eco-friendly en Argentina y en todo el mundo!</p>
-            <p>Además de nuestros productos, en nuestras redes sociales podrás encontrar consejos para reducir tu impacto
-              ambiental. ¿Qué mejor manera de cuidar el planeta que con productos eco-friendly? ¡Descúbrelos aquí!</p>
-    
-          </div>
-    
-    
-        </section>
-      
+      <h2>Productos más vendidos</h2>
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="src\img\cepillo.jpg" alt="Image 1">
+          <img src="src\img\jabon.webp" alt="Image 2">
+          <img src="src\img\shampoo.jpg" alt="Image 3">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+    </section>
+    </section>
+    <section>
+      Categorias
+    </section>
 
+    <section id="sobreNosotros">
+      <div class="sobreNosotros-title">
 
+        <h2>SOBRE NOSOTROS</h2>
+      </div>
+      <div class="sobreNosotros-text">
+
+        <p><span>GreenHeart</span> es la nueva tienda ecológica online para personas con personalidad. Nuestros
+          productos innovadores respetan el medio ambiente y son ideales para aquellos que buscan un estilo de vida
+          saludable y sostenible. ¡Bienvenido a nuestra tienda eco-friendly en Argentina y en todo el mundo!</p>
+        <p>Además de nuestros productos, en nuestras redes sociales podrás encontrar consejos para reducir tu impacto
+          ambiental. ¿Qué mejor manera de cuidar el planeta que con productos eco-friendly? ¡Descúbrelos aquí!</p>
+      </div>
+
+    </section>
     <section id="contact">
       <h2>Contacto</h2>
-      <div class="container-form">
+      <div class="container container-form">
         <form class="form">
-          <div class="container-input">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="name">
-            <span id="name-error" class="error-message"></span>
-        </div>
-        <div class="container-input">
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email">
-            <span id="email-error" class="error-message"></span>
-        </div>
-        <div class="container-input">
+          <div class="input-group">
+            <div class="container container-input">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name">
+              <span id="name-error" class="error-message"></span>
+            </div>
+            <div class="container container-input">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email">
+              <span id="email-error" class="error-message"></span>
+            </div>
+
+          </div>
+          <div class="container container-input txtarea">
             <label for="message">Mensaje</label>
             <textarea id="message" name="message"></textarea>
             <span id="message-error" class="error-message"></span>
-        </div>
-        <div class="container-select">
+          </div>
+          <div class="container container-select">
             <label for="subject">Asunto:</label>
             <select id="subject" name="subject">
-                <option value="consulta">Consulta</option>
-                <option value="reclamo">Reclamo</option>
-                <option value="sugerencia">Sugerencia</option>
+              <option value="consulta">Consulta</option>
+              <option value="reclamo">Reclamo</option>
+              <option value="sugerencia">Sugerencia</option>
             </select>
-        </div>
-        <div class="container-checkbox">
+
+          </div>
+
+
+          <div id="image-upload" class="container-input image">
+            <input type="file" id="image-input" name="image-input" accept="image/*">
+            <label for="image-input" class="image-label" id="image-label">Subir una imagen</label>
+
+            <div class="container-imagePreview">
+              <button id="cancel-btn">╳</button>
+              <img src="" class="image-preview">
+              <p id="image-name"></p>
+
+            </div>
+            <span id="image-error" class="error-message"></span>
+          </div>
+         
+
+          <div class="container container-checkbox">
             <input type="checkbox" id="agree" name="agree">
-            <label for="agree">Acepto los términos y condiciones</label>
+            <label for="agree">Deseo recibir novedades y ofertas exclusivas.</label>
             <span id="agree-error" class="error-message"></span>
-        </div>
-            <button type="submit">Enviar</button>
+
+          </div>
+
+
+          <button type="submit" class="submit-btn">Enviar</button>
         </form>
       </div>
     </section>
@@ -177,21 +194,21 @@
           <div class="producto">Maquillaje</div>
         </section>
         <section>
-            Envios, Ofertas etc
+          Envios, Ofertas etc
         </section>
         <section>
-            Productos mas vendidos
+          Productos mas vendidos
         </section>
         <section>
-            Categorias
+          Categorias
         </section>
         <section>
-            Sobre Nosotros
+          Sobre Nosotros
         </section>
         <section>
-            From contacto
+          From contacto
         </section>
-    </div>
+  </div>
 
   <footer class="footer" id="footer">
     <img class="footer-logo" src="./src/img/logo.png" alt="Logo de GreenHeart">
