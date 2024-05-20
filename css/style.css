@@ -1,3 +1,9 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+
 /* ----------------Barra de desplazamiento---------------- */
 
 ::-webkit-scrollbar {
@@ -15,9 +21,14 @@
     margin: 0;
     border: 0;
 }
+
+h2{
+    color: #544036;
+}
 a {
     text-decoration: none;
 }
+
 
 body{
     padding-top: 3.5em;
