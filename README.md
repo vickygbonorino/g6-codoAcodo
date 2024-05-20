@@ -25,6 +25,9 @@ https://vickygbonorino.github.io/g6-codoAcodo/
 
 
 ## Realizado por
+
 **Ailén Franco** 
+
 **Matias Miranda**
+
 **Victoria Gonzalez Bonorino**
