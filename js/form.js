@@ -138,14 +138,17 @@ const ImageUploadPreview = () => {
 
     cancelBtn.addEventListener('click', () => {
         resetImagePreview(imagePreview, imageName, imageLabel, cancelBtn);
+        
     });
 }
 
 const resetImagePreview = (imagePreview, imageName, imageLabel, cancelBtn) => {
     const imageInput = document.querySelector('#image-input');
+
     imageInput.value = '';
     imagePreview.src = '';
     imageName.textContent = '';
     imageLabel.style.display = 'block';
     cancelBtn.style.display = 'none';
+    imagePreview.removeAttribute('alt');
 }
